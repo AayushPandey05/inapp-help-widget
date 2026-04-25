@@ -8,7 +8,7 @@ Inspired by modern SaaS support tools like Intercom, Freshdesk, and Whatfix.
 
 ## Live Demo
 
-[View Live →](https://inapp-help-widget.vercel.app/) &nbsp;|&nbsp; [GitHub →](https://github.com/AayushPandey05/inapp-help-widget)
+[View Live →](https://inapp-help-widget.vercel.app/)
 
 ---
 
@@ -71,4 +71,4 @@ No installs. No build steps. Just open and run.
 ## Author
 
 **Aayush Pandey**
-[LinkedIn](https://linkedin.com/in/aayushpandey05) · [GitHub](https://github.com/AayushPandey05)
+[LinkedIn](https://linkedin.com/in/aayushpandey05)

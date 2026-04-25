@@ -8,7 +8,7 @@ Inspired by modern SaaS support tools like Intercom, Freshdesk, and Whatfix.
 
 ## Live Demo
 
-[View Live →](https://inapp-help-widget.heyitsaayush.me) &nbsp;|&nbsp; [GitHub →](https://github.com/AayushPandey05/inapp-help-widget)
+[View Live →](https://inapp-help-widget.vercel.app/) &nbsp;|&nbsp; [GitHub →](https://github.com/AayushPandey05/inapp-help-widget)
 
 ---
 

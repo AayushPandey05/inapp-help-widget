@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AppDash</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- floating help button -->
+    <button id="helpBtn">💬 Need Help?</button>
+
+    <!-- help panel -->
+    <div id="helpPanel">
+      <div class="panel-header">
+        <b>Help & Support</b>
+        <button id="closeBtn">✕</button>
+      </div>
+
+      <input type="text" id="searchInput" placeholder="🔍 Search help..." />
+
+      <div class="tabs">
+        <button class="tab active" data-tab="faqs">FAQs</button>
+        <button class="tab" data-tab="guides">Guides</button>
+        <button class="tab" data-tab="new">What's New</button>
+      </div>
+
+      <div id="tab-faqs" class="tab-pane active">
+        <p id="contextLabel" class="context-label">
+          Showing help for: Dashboard
+        </p>
+        <div id="faqList"></div>
+      </div>
+
+      <div id="tab-guides" class="tab-pane">
+        <div id="guideList"></div>
+      </div>
+
+      <div id="tab-new" class="tab-pane">
+        <div id="newList"></div>
+      </div>
+    </div>
+
+    <!-- app -->
+    <div class="app">
+      <div class="navbar">
+        <div class="logo">🟢 AppDash</div>
+        <div class="breadcrumb">
+          Workspace / <span id="pageLabel">Dashboard</span>
+        </div>
+        <div class="avatar">AP</div>
+      </div>
+
+      <div class="layout">
+        <div class="sidebar">
+          <div class="nav-item active" data-page="dashboard">📊 Dashboard</div>
+          <div class="nav-item" data-page="users">👥 Users</div>
+          <div class="nav-item" data-page="reports">📈 Reports</div>
+          <div class="nav-item" data-page="settings">⚙️ Settings</div>
+        </div>
+
+        <div class="main">
+          <div class="page active" id="page-dashboard">
+            <h2>Dashboard</h2>
+            <p class="sub">Welcome back, Aayush!</p>
+            <div class="stats">
+              <div class="stat-card">
+                <div class="stat-label">Active Users</div>
+                <div class="stat-num">1,284</div>
+                <div class="stat-up">+12% this week</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Adoption Rate</div>
+                <div class="stat-num">73%</div>
+                <div class="stat-up">+5% this month</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Tasks Done</div>
+                <div class="stat-num">432</div>
+                <div class="stat-up">+28 today</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-label">Guides Launched</div>
+                <div class="stat-num">38</div>
+                <div class="stat-up">+3 this week</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page" id="page-users">
+            <h2>Users</h2>
+            <p class="sub">Manage your team members.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Aayush Pandey</td>
+                  <td>aayush@co.com</td>
+                  <td>Admin</td>
+                  <td><span class="badge green">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Rahul Mehta</td>
+                  <td>rahul@co.com</td>
+                  <td>Member</td>
+                  <td><span class="badge green">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Priya Sharma</td>
+                  <td>priya@co.com</td>
+                  <td>Admin</td>
+                  <td><span class="badge green">Active</span></td>
+                </tr>
+                <tr>
+                  <td>Vikram Singh</td>
+                  <td>vikram@co.com</td>
+                  <td>Viewer</td>
+                  <td><span class="badge gray">Inactive</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="page" id="page-reports">
+            <h2>Reports</h2>
+            <p class="sub">Download your analytics reports.</p>
+            <div class="report-item">
+              <span>Monthly Adoption — March 2026</span
+              ><button>Download</button>
+            </div>
+            <div class="report-item">
+              <span>User Engagement — March 2026</span><button>Download</button>
+            </div>
+            <div class="report-item">
+              <span>Guide Completion — Feb 2026</span><button>Download</button>
+            </div>
+          </div>
+
+          <div class="page" id="page-settings">
+            <h2>Settings</h2>
+            <p class="sub">Update your account info.</p>
+            <label>Full name</label>
+            <input type="text" value="Aayush Pandey" />
+            <label>Email</label>
+            <input type="email" value="aayush@company.com" />
+            <label>Role</label>
+            <input type="text" value="Solutions Engineer" />
+            <button class="save-btn">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="widget.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
